@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>文本属性</title>
+<style type="text/css">
+.title {
+	letter-spacing: 5px;  /*字符间距*/
+	
+	text-decoration: underline;   /*检索或设置对象中的文本的装饰  underline：指定文字的装饰是下划线*/
+}
+
+.longFont{
+	font-size: 16px;
+	color: red;
+	white-space:nowrap; 	/*还须定义强制文本在一行内显示（white-space:nowrap）*/
+	overflow:hidden;   /*溢出内容为隐藏（overflow:hidden）*/ 
+	text-overflow:ellipsis;  /*用来设置是否使用一个省略标记（...）标示对象内文本的溢出。*/
+	
+	
+}
+
+li {
+	font: 12px "微软雅黑";
+	text-align: left;
+	line-height: 28px;
+}
+
+ul{
+border:1px solid red;
+width:400px;
+}
+
+/* 大字体的样式*/
+.bigFont {
+	font-size: 16px;
+	color: red;
+}
+
+.shadow{
+	text-shadow:3px 5px 1px red; /*字体阴影 */
+}
+
+.lower{
+	text-transform:lowercase; /*大小写转换*/
+}
+</style>
+</head>
+
+<body>
+	<div>
+    	<ul>
+            <li class="title">【新闻】[设搜狐为首页] 10月1日 </li>
+            <li class="longFont">六十年国庆阅兵规格堪比奥运会，世界最大规模的阅兵仪式全球关注</li>
+            <li>我国商务部对美国增收中国轮胎关税提出严正交涉</li>
+            <li>中国经济在金融危机中仍保持较强发展态势</li>
+            <li class="bigFont">博客| 贾君鹏：学习CSS让我废寝忘食忘记回家吃饭！ </li>
+            <li class="shadow">博客| 贾君鹏：学习CSS让我废寝忘食忘记回家吃饭！ </li>
+            <li class="lower">Welcome to ycInfo! </li>
+		</ul>
+    </div>
+</body>
+</html>

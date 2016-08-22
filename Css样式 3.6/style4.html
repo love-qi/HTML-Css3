@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	div{
+		width:200px;
+		height:200px;
+		border:1px solid red;
+		padding:50px;
+	}
+	.div1{
+		/*               200      50        50
+		实际盒子的大小:width+padding-left+padding-right=300px   */
+		box-sizing:content-box;
+	}
+	.div2{
+		/*
+		                 100         50          50
+		实际大小：200px=width+padding-left+padding-right   */
+		box-sizing:border-box;
+	}
+</style>
+</head>
+
+<body>
+	<div class="div1">测试文字</div>
+    <div class="div2">测试文字</div>
+</body>
+</html>
